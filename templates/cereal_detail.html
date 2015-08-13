@@ -3,15 +3,36 @@
 {% load staticfiles %}
 
 {% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
 
-	<h3>{{cereal.name}}</h3>
-	<ul>
-		<li><b>Manufacturer:</b> {{cereal.manufacturer}}</li>
-		
-		{% for fact in cereal.nutrifact.nutri %}
-			<li>{{fact}}</li>
 
-		{% endfor %}
+
+				<h3>{{cereal.name}}</h3>
+				<img src="/media/{{ cereal.image }}">
+			</div>
+			<div class="col-md-6">	
+				<ul>
+					<li><b>Manufacturer:</b> {{cereal.manufacturer}}</li>
+
+					{% for fact in cereal.nutrifact.nutri %}
+						<li>{{fact}}</li>
+
+					{% endfor %}
+
+				</ul>
+			<div class="row">
+				<div class="col-lg-7">
+
+					<p><b>{{ cereal.info }}</b></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	
 

@@ -10,6 +10,9 @@ class Cereal(models.Model):
 	display_shelf = models.FloatField(null=True)
 	t_ype = models.CharField(max_length=2,null=True)
 	manufacturer = models.ForeignKey('maim.Manufacturer', null=True)
+	image = models.ImageField(upload_to="cereal", null=True)
+	info = models.TextField()
+
 	def __unicode__(self):
 		return self.name
 
