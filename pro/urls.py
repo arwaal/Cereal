@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
+    url(r'^$','maim.views.home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^cereal_list/$','maim.views.cereal_list'),
     # url(r'^get_view/$', 'maim.views.get_view'),
