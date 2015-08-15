@@ -6,8 +6,8 @@ import sys
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pro.settings")
 
-import django
-django.setup()
+#import django
+#django.setup()
 
 from maim.models import Cereal, NutriFact, Manufacturer 
 
