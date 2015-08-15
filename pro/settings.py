@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'Cereal', 
         'HOST': '127.0.0.1', 
         'USER': 'root', 
-        'PASSWORD': 'root', 
+        'PASSWORD': 'ana7elwa', 
         'PORT': ''
     }
 }
